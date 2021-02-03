@@ -13,8 +13,9 @@ public class Gugudan {
 		} else if ( number > 9 ) {
 			System.out.println("2 이상, 9 이하의 값만 입력할 수 있습니다.");
 		} else {
-			for( int i = 1; i < 9; i++ ) {
-				System.out.println(number + " * " + i + " = " + number*i );
+			for( int i = 1; i <= 9; i++ ) {
+				int result = i*number;
+				System.out.println(number + " * " + i + " = " + result );
 			}
 		}
 	}
