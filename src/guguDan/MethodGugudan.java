@@ -9,24 +9,22 @@ public class MethodGugudan {
 		return result;
 	}   // int[] 반환받을 배열의 데이터 타입
 	
-	public static void main(String[] args) {
-		
-		int[] result = calculate(2);
-		
+	public static void print(int[] result) {
 		for( int i = 0; i < result.length; i++ ) {
 			System.out.println(result[i]);
 		}
+	}
+	
+	public static void main(String[] args) {
+		
+		int[] result = calculate(2);
+		print(result);
 		
 		int[] times3 = calculate(3);
-		
-		for( int i = 0; i < times3.length; i++ ) {
-			System.out.println(times3[i]);
-		}
+		print(result);
 		
 		int[] times4 = calculate(4);
+		print(result);
 		
-		for( int i = 0; i < times4.length; i++ ) {
-			System.out.println(times4[i]);
-		}
 	}
 }
